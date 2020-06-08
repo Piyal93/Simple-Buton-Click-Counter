@@ -1,0 +1,47 @@
+ </body>
+</html>
+<!DOCTYPE HTML>
+<head>
+    <center><h1>My First code</h1><span style='font-size:100px;'>&#9996;</span></center>
+
+    <br>
+    <br>
+    <center><style>
+    #box{
+        width: 400px;
+        height: 200px;
+        border: 2px solid rgb(25, 0, 255);
+    }
+    button{
+        width: 400px;
+        height: 40px;
+        background: rgb(115, 255, 0);
+        box-shadow: 4px 4px 4px #333;
+    }
+    
+    </style>
+    <script type ="text/javascript"> //Html 4.x requires type attribute in script tag.
+        var i = 1; //for every click 1 will be added to this value of i.
+
+        function myFunc() {
+            var box = document.getElementById("box"); // getElementById() returns an Element object representing the element whose id property matches the specified string.
+             if (box.innerHTML=="Click the button") //innerHTML gets or sets the HTML or XML markup contained within the element.
+                {
+                box.innerHTML = "You clicked the button" //innerHTML gets or sets the HTML or XML markup contained within the element.
+                }
+            else 
+                {
+                i += 1;
+                box.innerHTML = "You clicked the button " + i + " time/s."
+                }
+
+        }
+    </script>
+</head>
+<html>
+        <body>
+            <h3><div id="box">Click the button</div></h3> 
+            <button onclick="myFunc()"> Click Me </button>
+        </body>
+            
+</html>
